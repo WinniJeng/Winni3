@@ -176,21 +176,219 @@ $(document).ready(function () {
 
 
 <!-- rnb-text-begin -->
-<p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
-<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgIn0= -->
-<pre class="r"><code>plot(cars)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYTwtNVxuYTI8LTVMXG5hVmVjdG9yPC1jKDUsNiw3KVxuYTJWZWN0b3I8LWMoNUwsNkwsN0wpXG5iPC1cIuS9oOWlvVwiXG5iVmVjdG9yPC1jKFwi5L2g5aW9XCIsXCJIb3cgYXJlIHlvdT9cIilcbmBgYCJ9 -->
+<pre class="r"><code>a&lt;-5
+a2&lt;-5L
+aVector&lt;-c(5,6,7)
+a2Vector&lt;-c(5L,6L,7L)
+b&lt;-&quot;你好&quot;
+bVector&lt;-c(&quot;你好&quot;,&quot;How are you?&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
-<p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
-<p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubnVtMTwtMVxubnVtMjwtMTAwXG5udW0xK251bTJcbmBgYCJ9 -->
+<pre class="r"><code>num1&lt;-1
+num2&lt;-100
+num1+num2</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEwMVxuIn0= -->
+<pre><code>[1] 101</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubnVtMS1udW0yXG5gYGAifQ== -->
+<pre class="r"><code>num1-num2</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC05OVxuIn0= -->
+<pre><code>[1] -99</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubnVtMSpudW0yXG5gYGAifQ== -->
+<pre class="r"><code>num1*num2</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEwMFxuIn0= -->
+<pre><code>[1] 100</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubnVtMTwtMS41Njhcbm51bTI8LTIuMTIxXG5yb3VuZChudW0xLGRpZ2l0cyA9IDIpXG5gYGAifQ== -->
+<pre class="r"><code>num1&lt;-1.568
+num2&lt;-2.121
+round(num1,digits = 2)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEuNTdcbiJ9 -->
+<pre><code>[1] 1.57</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubnVtMTwtMS41Njhcbm51bTI8LTIuMTIxXG5yb3VuZChudW0xLGRpZ2l0cyA9IDIpIC0+IHJvdW5kbnVtMVxuYGBgIn0= -->
+<pre class="r"><code>num1&lt;-1.568
+num2&lt;-2.121
+round(num1,digits = 2) -&gt; roundnum1</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYjIgPC1cIifkvaDlpb0nXCJcbmBgYCJ9 -->
+<pre class="r"><code>b2 &lt;-&quot;'你好'&quot;</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueCA8LSAxMFxuY2xhc3MoeCkgIyBcIm51bWVyaWNcIlxuYGBgIn0= -->
+<pre class="r"><code>x &lt;- 10
+class(x) # &quot;numeric&quot;</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibnVtZXJpY1wiXG4ifQ== -->
+<pre><code>[1] &quot;numeric&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxub2xkQ2xhc3MoeCkgIyBOVUxMXG5gYGAifQ== -->
+<pre class="r"><code>oldClass(x) # NULL</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTlVMTFxuIn0= -->
+<pre><code>NULL</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5oZXJpdHMoeCwgXCJhXCIpICNGQUxTRVxuYGBgIn0= -->
+<pre class="r"><code>inherits(x, &quot;a&quot;) #FALSE</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFXG4ifQ== -->
+<pre><code>[1] FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MoeCkgPC0gYyhcImFcIiwgXCJiXCIpXG5pbmhlcml0cyh4LFwiYVwiKSAjVFJVRVxuYGBgIn0= -->
+<pre class="r"><code>class(x) &lt;- c(&quot;a&quot;, &quot;b&quot;)
+inherits(x,&quot;a&quot;) #TRUE</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5oZXJpdHMoeCwgXCJhXCIsIFRSVUUpICMgMVxuYGBgIn0= -->
+<pre class="r"><code>inherits(x, &quot;a&quot;, TRUE) # 1</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDFcbiJ9 -->
+<pre><code>[1] 1</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5oZXJpdHMoeCwgYyhcImFcIiwgXCJiXCIsIFwiY1wiKSwgVFJVRSkgIyAxIDIgMFxuYGBgIn0= -->
+<pre class="r"><code>inherits(x, c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;), TRUE) # 1 2 0</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEgMiAwXG4ifQ== -->
+<pre><code>[1] 1 2 0</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div id="second-class" class="section level2">
+<h2>second class</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm91bmQoMi4zODc1KVxuYGBgIn0= -->
+<pre class="r"><code>round(2.3875)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDJcbiJ9 -->
+<pre><code>[1] 2</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm91bmQoMi4zODc1LCBkaWdpdHMgPSAyKVxuYGBgIn0= -->
+<pre class="r"><code>round(2.3875, digits = 2)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDIuMzlcbiJ9 -->
+<pre><code>[1] 2.39</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkcilcbmBgYCJ9 -->
+<pre class="r"><code>library(readr)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gbGlicmFyeShyZWFkcikgOiB0aGVyZSBpcyBubyBwYWNrYWdlIGNhbGxlZCDigJhyZWFkcuKAmVxuSW4gYWRkaXRpb246IFdhcm5pbmcgbWVzc2FnZTpcbkluIHN0cnNwbGl0KGNvZGUsIFwiXFxuXCIsIGZpeGVkID0gVFJVRSkgOlxuICBpbnB1dCBzdHJpbmcgMSBpcyBpbnZhbGlkIGluIHRoaXMgbG9jYWxlXG4ifQ== -->
+<pre><code>Error in library(readr) : there is no package called ‘readr’
+In addition: Warning message:
+In strsplit(code, &quot;\n&quot;, fixed = TRUE) :
+  input string 1 is invalid in this locale</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3R1ZGVudCTlh7rnlJ/lnLBcbmBgYCJ9 -->
+<pre class="r"><code>student$出生地</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXMuZmFjdG9yKHN0dWRlbnQk5Ye655Sf5ZywKSAtPiBzdHVkZW50JOWHuueUn+WcsFxuYGBgIn0= -->
+<pre class="r"><code>as.factor(student$出生地) -&gt; student$出生地</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGV2ZWxzKHN0dWRlbnQk5Ye655Sf5ZywKVxuXG5gYGAifQ== -->
+<pre class="r"><code>levels(student$出生地)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUoc3R1ZGVudCTlh7rnlJ/lnLApXG5gYGAifQ== -->
+<pre class="r"><code>table(student$出生地)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkcilcbnN0dWRlbnQgPC0gcmVhZF9jc3YoXCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vdHBlbWFydGluL2NvdXJzZS0xMDctMS1wcm9ncmFtbWluZy1mb3ItZGF0YS1zY2llbmNlL21hc3Rlci9kYXRhL3N0dWRlbnQuY3N2XCIpXG5saWJyYXJ5KGRwbHlyKVxubGlicmFyeShtYWdyaXR0cilcbnN0dWRlbnQgJTw+JSBtdXRhdGUoXG4gIOi6q+mrmOe0mui3nT1jdXQo6Lqr6auYLGMoMCwxNTAsMTU1LDE2MCwxNjUsMTcwLDE3NSwxODAsMTg1LDIwMCkpKVxuYGBgIn0= -->
+<pre class="r"><code>library(readr)
+student &lt;- read_csv(&quot;https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/student.csv&quot;)
+library(dplyr)
+library(magrittr)
+student %&lt;&gt;% mutate(
+  身高級距=cut(身高,c(0,150,155,160,165,170,175,180,185,200)))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmFjdG9yKHN0dWRlbnQk6Lqr6auY57Sa6LedLFxuICAgICAgIGxldmVscz1jKFwiKDAsMTUwXVwiLFwiKDE1MCwxNTVdXCIsIFwiKDE1NSwxNjBdXCIsIFwiKDE2MCwxNjVdXCIgLFwiKDE2NSwxNzBdXCIsIFwiKDE3MCwxNzVdXCIgLFwiKDE3NSwxODBdXCIgLFwiKDE4MCwxODVdXCIsIFwiKDE4NSwyMDBdXCIpLFxuICAgICAgIG9yZGVyZWQ9VFJVRSkgLT4gc3R1ZGVudCTouqvpq5jntJrot51cbmBgYCJ9 -->
+<pre class="r"><code>factor(student$身高級距,
+       levels=c(&quot;(0,150]&quot;,&quot;(150,155]&quot;, &quot;(155,160]&quot;, &quot;(160,165]&quot; ,&quot;(165,170]&quot;, &quot;(170,175]&quot; ,&quot;(175,180]&quot; ,&quot;(180,185]&quot;, &quot;(185,200]&quot;),
+       ordered=TRUE) -&gt; student$身高級距</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbmxpYnJhcnkobHVicmlkYXRlKVxuYSA8LSB5bWQoXCIyMDE3LTAxLTMxXCIpIFxuYiA8LSB5bWRfaG1zKFwiMjAxNy0wMS0zMSAyMDoxMTo1OVwiKVxuYGBgIn0= -->
+<pre class="r"><code>library(dplyr)
+library(lubridate)
+a &lt;- ymd(&quot;2017-01-31&quot;) 
+b &lt;- ymd_hms(&quot;2017-01-31 20:11:59&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgwOTI2Ig0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gDQoNClRyeSBleGVjdXRpbmcgdGhpcyBjaHVuayBieSBjbGlja2luZyB0aGUgKlJ1biogYnV0dG9uIHdpdGhpbiB0aGUgY2h1bmsgb3IgYnkgcGxhY2luZyB5b3VyIGN1cnNvciBpbnNpZGUgaXQgYW5kIHByZXNzaW5nICpDdHJsK1NoaWZ0K0VudGVyKi4gDQoNCmBgYHtyfQ0KcGxvdChjYXJzKQ0KYGBgDQoNCkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDdHJsK0FsdCtJKi4NCg0KV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuDQoNClRoZSBwcmV2aWV3IHNob3dzIHlvdSBhIHJlbmRlcmVkIEhUTUwgY29weSBvZiB0aGUgY29udGVudHMgb2YgdGhlIGVkaXRvci4gQ29uc2VxdWVudGx5LCB1bmxpa2UgKktuaXQqLCAqUHJldmlldyogZG9lcyBub3QgcnVuIGFueSBSIGNvZGUgY2h1bmtzLiBJbnN0ZWFkLCB0aGUgb3V0cHV0IG9mIHRoZSBjaHVuayB3aGVuIGl0IHdhcyBsYXN0IHJ1biBpbiB0aGUgZWRpdG9yIGlzIGRpc3BsYXllZC4NCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgwOTI2Ig0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KYGBge3J9DQphPC01DQphMjwtNUwNCmFWZWN0b3I8LWMoNSw2LDcpDQphMlZlY3RvcjwtYyg1TCw2TCw3TCkNCmI8LSLkvaDlpb0iDQpiVmVjdG9yPC1jKCLkvaDlpb0iLCJIb3cgYXJlIHlvdT8iKQ0KDQpgYGANCg0KYGBge3J9DQpudW0xPC0xDQpudW0yPC0xMDANCm51bTErbnVtMg0KDQpgYGANCg0KYGBge3J9DQpudW0xLW51bTINCm51bTEqbnVtMg0KYGBgDQoNCmBgYHtyfQ0KbnVtMTwtMS41NjgNCm51bTI8LTIuMTIxDQpyb3VuZChudW0xLGRpZ2l0cyA9IDIpDQpgYGANCg0KYGBge3J9DQpudW0xPC0xLjU2OA0KbnVtMjwtMi4xMjENCnJvdW5kKG51bTEsZGlnaXRzID0gMikgLT4gcm91bmRudW0xDQoNCmBgYA0KDQpgYGB7cn0NCmIyIDwtIifkvaDlpb0nIg0KDQoNCmBgYA0KDQpgYGB7cn0NCnggPC0gMTANCmNsYXNzKHgpICMgIm51bWVyaWMiDQpvbGRDbGFzcyh4KSAjIE5VTEwNCmluaGVyaXRzKHgsICJhIikgI0ZBTFNFDQpjbGFzcyh4KSA8LSBjKCJhIiwgImIiKQ0KaW5oZXJpdHMoeCwiYSIpICNUUlVFDQppbmhlcml0cyh4LCAiYSIsIFRSVUUpICMgMQ0KaW5oZXJpdHMoeCwgYygiYSIsICJiIiwgImMiKSwgVFJVRSkgIyAxIDIgMA0KYGBgDQpgYGB7cn0NCg0KYGBgDQojI3NlY29uZCBjbGFzcw0KDQoNCg0KDQpgYGB7cn0NCnJvdW5kKDIuMzg3NSkNCg0KYGBgDQpgYGB7cn0NCnJvdW5kKDIuMzg3NSwgZGlnaXRzID0gMikNCg0KYGBgDQoNCmBgYHtyfQ0KbGlicmFyeShyZWFkcikNCnN0dWRlbnQgPC0gcmVhZF9jc3YoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS90cGVtYXJ0aW4vY291cnNlLTEwNy0xLXByb2dyYW1taW5nLWZvci1kYXRhLXNjaWVuY2UvbWFzdGVyL2RhdGEvc3R1ZGVudC5jc3YiKQ0KbGlicmFyeShkcGx5cikNCmxpYnJhcnkobWFncml0dHIpDQpzdHVkZW50ICU8PiUgbXV0YXRlKA0KICDouqvpq5jntJrot509Y3V0KOi6q+mrmCxjKDAsMTUwLDE1NSwxNjAsMTY1LDE3MCwxNzUsMTgwLDE4NSwyMDApKSkNCmBgYA0KDQoNCg0KYGBge3J9DQpzdHVkZW50JOWHuueUn+WcsA0KYGBgDQoNCmBgYHtyfQ0KYXMuZmFjdG9yKHN0dWRlbnQk5Ye655Sf5ZywKSAtPiBzdHVkZW50JOWHuueUn+WcsA0KYGBgDQoNCg0KDQpgYGB7cn0NCmxldmVscyhzdHVkZW50JOWHuueUn+WcsCkNCg0KYGBgDQoNCg0KDQpgYGB7cn0NCnRhYmxlKHN0dWRlbnQk5Ye655Sf5ZywKQ0KYGBgDQoNCg0KYGBge3J9DQpsaWJyYXJ5KHJlYWRyKQ0Kc3R1ZGVudCA8LSByZWFkX2NzdigiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RwZW1hcnRpbi9jb3Vyc2UtMTA3LTEtcHJvZ3JhbW1pbmctZm9yLWRhdGEtc2NpZW5jZS9tYXN0ZXIvZGF0YS9zdHVkZW50LmNzdiIpDQpsaWJyYXJ5KGRwbHlyKQ0KbGlicmFyeShtYWdyaXR0cikNCnN0dWRlbnQgJTw+JSBtdXRhdGUoDQogIOi6q+mrmOe0mui3nT1jdXQo6Lqr6auYLGMoMCwxNTAsMTU1LDE2MCwxNjUsMTcwLDE3NSwxODAsMTg1LDIwMCkpKQ0KYGBgDQoNCg0KYGBge3J9DQpmYWN0b3Ioc3R1ZGVudCTouqvpq5jntJrot50sDQogICAgICAgbGV2ZWxzPWMoIigwLDE1MF0iLCIoMTUwLDE1NV0iLCAiKDE1NSwxNjBdIiwgIigxNjAsMTY1XSIgLCIoMTY1LDE3MF0iLCAiKDE3MCwxNzVdIiAsIigxNzUsMTgwXSIgLCIoMTgwLDE4NV0iLCAiKDE4NSwyMDBdIiksDQogICAgICAgb3JkZXJlZD1UUlVFKSAtPiBzdHVkZW50JOi6q+mrmOe0mui3nQ0KYGBgDQoNCg0KYGBge3J9DQpsaWJyYXJ5KGRwbHlyKQ0KbGlicmFyeShsdWJyaWRhdGUpDQphIDwtIHltZCgiMjAxNy0wMS0zMSIpIA0KYiA8LSB5bWRfaG1zKCIyMDE3LTAxLTMxIDIwOjExOjU5IikNCmBgYA0KDQoNCg0KYGBge3J9DQoNCmBgYA0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg==</div>
 
 
 
