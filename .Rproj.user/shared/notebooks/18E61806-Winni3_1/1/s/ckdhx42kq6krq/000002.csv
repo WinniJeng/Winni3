@@ -1,3 +1,0 @@
-"0","str_c(letters,LETTERS)"
-"2","Error in str_c(letters, LETTERS) : could not find function ""str_c""
-"
