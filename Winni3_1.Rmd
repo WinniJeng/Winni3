@@ -261,3 +261,14 @@ classSurvey$年級 <- as.factor(classSurvey$年級)
 levels(classSurvey$年級) <- c("大四及以上","大三","大二","大一")
 ```
 
+```{r}
+freshActivity<-
+  classSurvey$本學期目前已參加之課外活動[(classSurvey$年級=="大一")]
+library(stringr)
+str_split_fixed(freshActivity,",",n=5)->aa
+str_c(aa)->bb
+```
+
+```{r}
+```
+
