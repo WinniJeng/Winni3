@@ -228,3 +228,36 @@ as.factor(student) <-student$年級
 levels()
 ```
 
+
+```{r}
+library(googlesheets)
+#gs_auth(new_user = TRUE)
+gsSurvey<-gs_key("1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE")  #download sheet information as an object
+classSurvey<-gs_read(gsSurvey,ws=1) #access the 1st worksheet
+```
+```{r}
+dim(classSurvey)
+nrow(classSurvey)
+ncol(classSurvey)
+```
+
+```{r}
+class(classSurvey$學號)
+# 學號轉成character
+# 學號取出字串第2-4位 存成 年級
+# 年級 轉 factor
+# 年級進行 generic replacement
+```
+```{r}
+class(classSurvey$學號)
+# 學號轉成character
+classSurvey$學號 <- as.character(classSurvey$學號)
+# 學號取出字串第2-4位 存成 年級
+library(stringr)
+classSurvey$年級 <- str_sub(classSurvey$學號,2,4)
+# 年級 轉 factor
+classSurvey$年級 <- as.factor(classSurvey$年級)
+# 年級進行 generic replacement
+levels(classSurvey$年級) <- c("大四及以上","大三","大二","大一")
+```
+
