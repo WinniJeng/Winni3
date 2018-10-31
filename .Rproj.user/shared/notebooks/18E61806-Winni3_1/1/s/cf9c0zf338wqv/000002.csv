@@ -1,4 +1,0 @@
-"0","str_split_fixed()"
-"2","Error in str_split(string, pattern, n = n, simplify = TRUE) : 
-  argument ""n"" is missing, with no default
-"
