@@ -511,3 +511,84 @@ collegeData %>%
   ) -> collegeData5
 collegeData5 %>% str
 ```
+
+
+
+
+
+
+
+##20181226##
+
+
+
+```{r}
+plasticContainer <- list(
+  greenBox=c("paper","scissor"),     # location 1
+  redBox=c(1L,3L,2.5),               # location 2
+  blueBox=c(TRUE,FALSE,TRUE,TRUE)    # location 3
+)
+```
+
+
+```{r}
+plasticContainer[c("greenBox","redBox")] # or plasticContainer[c(1,2)]
+```
+
+```{r}
+plasticContainer[c("greenBox")] # or plasticContainer[c(1,2)]
+```
+```{r}
+plasticContainer[["greenBox"] # or plasticContainer[[1]]
+```
+
+
+```{r}
+plasticContainer$greenBox
+```
+
+```{r}
+plasticContainer$greenBox[1]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
