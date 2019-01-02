@@ -552,14 +552,43 @@ plasticContainer$greenBox[1]
 ```
 
 
+```{r}
+library(readr)
+libraryData <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/library100_102.csv")
+```
+
+
+```{r}
+libraryData$書籍館藏地 %>% as.factor %>% levels -> storageLocations
+storageLocations
+```
+
+
+```{r}
+libraryData %>%
+  group_by(書籍館藏地) %>% # 依書籍館藏地不同形成不同subsample_i
+  summarise(
+    borrowCount=n() #每個subsample_i計算 borrowCount=nrow(subsample_i)
+  ) -> result
+result 
+```
 
 
 
+```{r}
+libraryData %>%
+  select(讀者借閱冊數,書籍出版日期) 
+```
 
-
-
-
-
+```{r}
+libraryData %>%
+  select(讀者借閱冊數,書籍出版日期) %>%
+  summarise(
+    讀者平均借閱冊數=mean(讀者借閱冊數),
+    最小書籍出版日期=min(書籍出版日期),
+    最大書籍出版日期=max(書籍出版日期)
+  )
+```
 
 
 
